@@ -1,11 +1,4 @@
 
-
-**`README.md`**:
-
-Debe contener lo siguiente:
-- Un título con el nombre de tu proyecto.
-- Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-- La imagen final de tu proyecto.
 - Investigación UX:
   - Explicar quiénes son los usuarios y los objetivos en relación con el producto.
   - Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
@@ -18,7 +11,7 @@ Debe contener lo siguiente:
   Esta aplicacion permitira el envio de informacion confidencial entre 2 o mas personas a traves del
   correo electrónico.
 
-  Investigacion UX
+  **`Investigacion UX`**
   Debido al intercambio de mensaje que se dan en las diferentes areas de trabajo de una agencia bancaria,
   se va crear una aplicacion que permitira encriptar y desencriptar los mensajes.
   Cierta area del sistema bancario envia a traves del correo electronico al area de call center la cartera de 
