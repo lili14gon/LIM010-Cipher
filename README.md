@@ -21,7 +21,7 @@
   cifrado para ser pegado en nuestra bandeja de salida del correo electronico, tambien se enviara al receptor
   la clave para que pueda descifrarlo en la aplicacion web. 
   
-  !["Imagen del 1er Prototipo"](imag/im1.jpg)
+  !["Imagen del 1er Prototipo"](imag/im.PNG)
 
   El feeback recibido por mis compañeras fue que al momento de obtener el texto cifrado hacerle recordar al usuario
   la clave que ha utilizado para encriptar el texto y asi poder tener presente al momento enviarlo.
