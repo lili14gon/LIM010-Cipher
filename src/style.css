@@ -12,18 +12,19 @@ body{
  height: 420px;
  background: black;
  color: #F39C12;
- top: 50%;
- left: 50%;
- position: absolute;
- transform: translate(-50%,-50%);
+ margin: 100px 500px;
+/* top: 50%;*/
+ /*left: 50%;*/
+ /*position: absolute;*/
+ /*transform: translate(-50%,-50%);*/
  padding: 30px 30px;
  border-radius: 20px;
  /*display: block;*/
  /*color: black;*/
 }
 
-.secLogin .imagen1{
-
+/*.secLogin .imagen1{*/
+.imagen1{
 border-radius: 50%;
 display: block;
 margin: auto;
@@ -32,16 +33,24 @@ margin: auto;
 
 .secLogin h1{
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .secLongin label{
-	margin: 0;
-	padding: 0;
+	/*margin: 0;
+	padding: 0;*/
 
 }
 .secLongin input{
 	width: 100px;
 	margin-bottom: 20px;
 }
-
+.secCodyDec{
+	margin: 300px 400px;
+	padding: 30px 30px;
+	display: none;
+}
+.secResultado{
+	margin: 300px 400px;
+	display:none;
+}

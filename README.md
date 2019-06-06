@@ -24,4 +24,6 @@
   !["Imagen del 1er Prototipo"](imag/im.PNG)
 
   El feeback recibido por mis compañeras fue que al momento de obtener el texto cifrado hacerle recordar al usuario
-  la clave que ha utilizado para encriptar el texto y asi poder tener presente al momento enviarlo.
+  la clave que ha utilizado para encriptar el texto y asi poder tener presente al momento de enviarlo.
+  
+  !["Imagen del Balsamiq"](imag/im2.PNG)

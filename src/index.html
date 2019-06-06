@@ -22,14 +22,26 @@
 
 
       <section class="secCodyDec" id="secCodyDec">
-       <p id="titulo">CIFRA O DESCIFRA TUS MENSAJES</p><br>
+       <h1>CIFRA O DESCIFRA TUS MENSAJES</h1><br>
        <label  id="label2"> Mensaje</label><br><br>
        <input type="text" name="" id="menCodyDec" clas="inputMensaje"><br><br>
-       <label>Llave</label><br><br>
-       <input type="number" name="" id="number" class="inputNum"><br><br>
+       <label>Llave</label><br>
+       <input type="number" name="" id="number" class="inputNum" min="1" pattern="^[0-9]+"><br><br>
        <button type="button" id="btnCodificar"> Cifrar</button> <br>
-       <button type="butt" id="btnDecodificar">Descifrar</button>
+       <button type="button" id="btnDecodificar">Descifrar</button>
       </section>
+      
+
+      <section class="secResultado"id="secResultado">
+        <label id="label3">Resultado </label><br>
+        <p id="idResultado"></p>
+        <p>Recuerda que tu clave es<strong id="number"></strong></p><br>
+        <button typo="button" id="btnVolver">Volver</button><br>
+        <button type="button" id="btnFinalizar">Finalizar</button>
+
+      </section> 
+
+
 
 
     </main>
