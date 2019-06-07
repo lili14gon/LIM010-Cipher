@@ -1,5 +1,6 @@
 const pasword=document.getElementById("password");
-const respuesta=document.getElementById("idRespuesta");
+const respuesta=document.getElementById("idResultado");
+
 const secLogin=document.getElementById("secLogin");
 const secCodyDec=document.getElementById("secCodyDec");
 const secResultado=document.getElementById("secResultado");
@@ -23,7 +24,7 @@ function Login(){
 	if(pasword.value==='LABORATORIA'){
     //mensaje.innerHTML;
     secLogin.style.display="none";
-    secCodyDec.style.display="flex";
+    secCodyDec.style.display="block";
             //  alert("correcto");
 	}
 	if(password.value!=='LABORATORIA') {
@@ -37,13 +38,13 @@ function Login(){
 	}
 }
 function Volver(){
+ secCodyDec.style.display="block";
  secLogin.style.display="none";
- secCodyDec.style.display="flex";
  secResultado.style.display="none";
  }
 
  function Finalizar(){
- secLogin.style.display="flex";
+ secLogin.style.display="block";
  secCodyDec.style.display="none";
  secResultado.style.display="none";
 

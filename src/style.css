@@ -1,56 +1,94 @@
 /* Acá van tus reglas de estilo */
 body{
 	
-    margin:0;
-    padding: 0;
+
     background: url(imagen2.jpg) no-repeat center top;
-    background-size: cover;
+   /* background-size: cover;*/
+    text-align: center;
 }
+
+
 
 .secLogin{
  width: 320px;
  height: 420px;
- background: black;
+ background-color: black;
  color: #F39C12;
- margin: 100px 500px;
-/* top: 50%;*/
- /*left: 50%;*/
- /*position: absolute;*/
- /*transform: translate(-50%,-50%);*/
- padding: 30px 30px;
+ margin:  50px 500px;
  border-radius: 20px;
- /*display: block;*/
- /*color: black;*/
+ padding: 30px 30px;
 }
+ 
 
-/*.secLogin .imagen1{*/
-.imagen1{
+.secLogin .imagen1{
 border-radius: 50%;
 display: block;
 margin: auto;
 
 }
-
+/*
 .secLogin h1{
 	text-align: center;
 	font-size: 30px;
 }
 
-.secLongin label{
-	/*margin: 0;
-	padding: 0;*/
 
-}
 .secLongin input{
 	width: 100px;
 	margin-bottom: 20px;
-}
+}*/
 .secCodyDec{
-	margin: 300px 400px;
+	
 	padding: 30px 30px;
 	display: none;
+	width: 100%;
+	height: 100%;
+
+	/*text-align: center;*/
+
+	/*flex-direction: column;*/
+
+}/*
+.secCodyDec h1{
+    text-align: center;
 }
+.secCodyDec .label2{
+    color: white;
+}
+.secCodyDec .llave{
+    color: white;
+}
+.menCodyDec{
+	width: 50%;
+	height: 50px;
+
+}
+#number{
+   width: 30px;
+   height: 20px;
+}
+.btnCodificar{
+	width: 120px;
+    height: 24px;
+}
+.btnDecodificar{
+	width: 120px;
+    height: 24px;
+}*/
 .secResultado{
-	margin: 300px 400px;
+
 	display:none;
 }
+.menCodyDec{
+	border: 1px solid black;
+	vertical-align:top;
+	width:30%;
+}
+.secCodyDec .lblabel{
+	font-size: 20px;
+}
+#number{
+    width:30px;
+}
+
+
