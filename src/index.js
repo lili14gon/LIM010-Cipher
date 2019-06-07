@@ -12,8 +12,24 @@ const volver=document.getElementById("btnVolver");
 const finalizar=document.getElementById("btnFinalizar");
 
 
-codificar.addEventListener('click',cipher.encode);
-decodificar.addEventListener('click',cipher.decode);
+// codificar.addEventListener('click',cipher.encode);
+
+codificar.addEventListener('click',()=>{
+
+	secLogin.style.display="none";
+    secCodyDec.style.display="none";
+    secResultado.style.display="block";  
+});
+
+decodificar.addEventListener('click',()=>{
+    secLogin.style.display="none";
+    secCodyDec.style.display="none";
+    secResultado.style.display="block";
+
+});
+
+
+
 ingresar.addEventListener('click',Login);
 volver.addEventListener('click',Volver);
 finalizar.addEventListener('click',Finalizar);
