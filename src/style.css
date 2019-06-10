@@ -77,7 +77,14 @@ margin: auto;
 }*/
 .secResultado{
 
+    width:500px;
+	height:120px;
+    background: #D1F2EB;
 	display:none;
+	padding:20px 30px;
+	margin: auto;
+	text-align: center;
+
 }
 .menCodyDec{
 	border: 1px solid black;
@@ -90,5 +97,11 @@ margin: auto;
 #number{
     width:30px;
 }
-
+.secBloqueo{
+	
+	display: none;
+	color:white;
+	
+    margin:300px 500px;
+}
 
