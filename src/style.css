@@ -26,63 +26,22 @@ display: block;
 margin: auto;
 
 }
-/*
-.secLogin h1{
-	text-align: center;
-	font-size: 30px;
-}
 
-
-.secLongin input{
-	width: 100px;
-	margin-bottom: 20px;
-}*/
 .secCodyDec{
 	
 	padding: 30px 30px;
-	display: none;
+	/*display: none;*/
 	width: 100%;
 	height: 100%;
+}
 
-	/*text-align: center;*/
-
-	/*flex-direction: column;*/
-
-}/*
-.secCodyDec h1{
-    text-align: center;
-}
-.secCodyDec .label2{
-    color: white;
-}
-.secCodyDec .llave{
-    color: white;
-}
-.menCodyDec{
-	width: 50%;
-	height: 50px;
-
-}
-#number{
-   width: 30px;
-   height: 20px;
-}
-.btnCodificar{
-	width: 120px;
-    height: 24px;
-}
-.btnDecodificar{
-	width: 120px;
-    height: 24px;
-}*/
 .secResultado{
 
     width:500px;
 	height:120px;
     background: #D1F2EB;
-	display:none;
 	padding:20px 30px;
-	margin: auto;
+	margin:100px auto;
 	text-align: center;
 
 }
@@ -99,9 +58,25 @@ margin: auto;
 }
 .secBloqueo{
 	
-	display: none;
+	/*display: none;*/
 	color:white;
 	
     margin:300px 500px;
 }
-
+.hide{
+	display:none;
+}
+#btnIngresar{
+	/*margin: 10px auto;*/
+	width: 200px;
+	background-color:#F39C12;
+	color: white;
+	height: 30px;
+	border-radius:3px; 
+}
+#password{
+	margin: 20px auto;
+    border-radius:3px;
+    width: 200px;
+    height: 25px;
+}

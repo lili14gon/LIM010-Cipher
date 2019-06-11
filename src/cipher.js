@@ -31,6 +31,8 @@ window.cipher = {
          NumAscci1=string.charCodeAt(i);
   		    }
         else{
+
+        	//NumAscci1=(string.charCodeAt(i)-65-parseInto(offset)+26*2)%26+65;
         NumAscci1=90-((90-string.charCodeAt(i)+parseInt(offset))%26);
         }  
         Nuevaletra1=Nuevaletra1+String.fromCharCode(parseInt(NumAscci1));

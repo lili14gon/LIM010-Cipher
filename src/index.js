@@ -11,38 +11,44 @@ const codificar=document.getElementById("btnCodificar");
 const decodificar=document.getElementById("btnDecodificar");
 const volver=document.getElementById("btnVolver");
 const finalizar=document.getElementById("btnFinalizar");
- // secBloqueo.style.display="none";
-
-
-// codificar.addEventListener('click',cipher.encode);
 
 codificar.addEventListener('click',()=>{
 
-	 secLogin.style.display="none";
-     secCodyDec.style.display="none";
-     secResultado.style.display="block";  
+	 // secLogin.style.display="none";
+  //    secCodyDec.style.display="none";
+  //    secResultado.style.display="block";  
+
+  secLogin.classList.add('hide');
+  secCodyDec.classList.add('hide');
+  secResultado.classList.remove('hide');
 
     const llave=document.getElementById("number").value;
     const texto=document.getElementById("menCodyDec").value;
 
     const respuesta=document.getElementById("idResultado");
+    const recLlave=document.getElementById("recLlave")
+
     let Resultado=cipher.encode(llave,texto);
 
+    recLlave.innerHTML=llave;
     respuesta.innerHTML=(Resultado);
 
 });
 
 decodificar.addEventListener('click',()=>{
-    secLogin.style.display="none";
-    secCodyDec.style.display="none";
-    secResultado.style.display="block";
+    secLogin.classList.add('hide');
+    secCodyDec.classList.add('hide');
+    secResultado.classList.remove('hide');
+
 
     const llave=document.getElementById("number");
-    const texto=document.getElementById("menCodyDec").value;
+    const texto=document.getElementById("menCodyDec");
 
     const respuesta=document.getElementById("idResultado");
-    let Resultado=cipher.decode(llave.value,texto.value);
+    const recLlave=document.getElementById("recLlave")
 
+    let Resultado=cipher.decode(llave.value,texto.value);
+    recLlave.innerHTML=llave.value;
     respuesta.innerHTML=(Resultado);
 
 });
@@ -54,15 +60,12 @@ volver.addEventListener('click',Volver);
 finalizar.addEventListener('click',Finalizar);
 
 let contador=0;
-//secCodyDec.style.display="none";
 function Login(){
   
 	if(pasword.value==='LABORATORIA'){
-    //mensaje.innerHTML;
-    secLogin.style.display="none";
-    secCodyDec.style.display="block";
-   
-            //  alert("correcto");
+    
+    secLogin.classList.add('hide');
+    secCodyDec.classList.remove('hide');
 	}
 
 	if(password.value!=='LABORATORIA') {
@@ -76,35 +79,34 @@ function Login(){
 	    	
 	             }
 	           else{
-
-	           	    //document.write("Ya utilizaste todos tus intentos, en este momento no podrás ingresar");
-
-	    	        // alert("Ya utilizaste todos tus intentos, en este momento no podrás ingresar");
-	    	        // secLogin.style.display="none";
-
-	    	        secLogin.style.display="none";
-	    	        secBloqueo.style.display="block";
+                    //secLogin.classList.add('hide');
+                    // secBloqueo.classList.remove('hide');
+                    pasword.disabled = true;
+                    alert("Ya utilizaste todos tus intentos, en este momento no podrás ingresar");
 
 	    	       }
 	    }
  
     }
-     
-
  document.getElementById("password").value="";
 }
 function Volver(){
- secCodyDec.style.display="block";
- secLogin.style.display="none";
- secResultado.style.display="none";
+ secLogin.classList.add('hide');
+ secResultado.classList.add('hide');
+ secCodyDec.classList.remove('hide'); 
+
  document.getElementById("menCodyDec").value="";
  document.getElementById("number").value="";
  }
 
  function Finalizar(){
- secLogin.style.display="block";
- secCodyDec.style.display="none";
- secResultado.style.display="none";
+ secLogin.classList.remove('hide');
+ secCodyDec.classList.add('hide');
+ secResultado.classList.add('hide');
+
+ document.getElementById("password").value="";
+ document.getElementById("menCodyDec").value="";
+ document.getElementById("number").value="";
 
  }
 
