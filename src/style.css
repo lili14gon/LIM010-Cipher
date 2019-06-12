@@ -1,68 +1,52 @@
 /* Acá van tus reglas de estilo */
 body{
-	
-
     background: url(imagen2.jpg) no-repeat center top;
    /* background-size: cover;*/
-    text-align: center;
+    /*text-align: center;*/
 }
-
-
-
 .secLogin{
  width: 320px;
  height: 420px;
  background-color: black;
  color: #F39C12;
- margin:  50px 500px;
+ margin:  80px 500px;
  border-radius: 20px;
- padding: 30px 30px;
+ padding: 20px 20px;
+ font-size:22px;
+ text-align: center;
 }
- 
-
 .secLogin .imagen1{
 border-radius: 50%;
 display: block;
 margin: auto;
-
 }
-
 .secCodyDec{
 	
 	padding: 30px 30px;
 	/*display: none;*/
 	width: 100%;
 	height: 100%;
+	margin:100px 400px;
 }
 
 .secResultado{
 
-    width:500px;
-	height:120px;
-    background: #D1F2EB;
-	padding:20px 30px;
-	margin:100px auto;
-	text-align: center;
+    width:100%;
+	height:100%;
+	margin:150px 400px;
 
 }
 .menCodyDec{
 	border: 1px solid black;
 	vertical-align:top;
-	width:30%;
+	width:40%;
 }
-.secCodyDec .lblabel{
-	font-size: 20px;
-}
+
 #number{
     width:30px;
+    margin:10px 20px  
 }
-.secBloqueo{
-	
-	/*display: none;*/
-	color:white;
-	
-    margin:300px 500px;
-}
+
 .hide{
 	display:none;
 }
@@ -79,4 +63,29 @@ margin: auto;
     border-radius:3px;
     width: 200px;
     height: 25px;
+}
+.btnCodificar{
+	margin-left:440px;
+	margin-right:30px;
+}
+#secCodyDec h1{
+	margin-left:120px
+}
+.idResultado{
+	margin-left:70px;
+	width:40%;
+}
+.btnVolver{
+	margin-left:300px;
+	width:80px;
+}
+.btnFinalizar{
+	margin-left:300px;
+	width:80px;
+}
+label{
+font-size: 20px;
+}
+#tex{
+	font-size:20px;
 }

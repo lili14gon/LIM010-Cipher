@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    
     <link rel="stylesheet" href="style.css" />
     <title>cifrado cesar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +25,10 @@
      <!--  <div> -->
         <section class="secCodyDec hide" id="secCodyDec">
        <h1>CIFRA O DESCIFRA TUS MENSAJES</h1>
-       <label for="txtex2" class="lblabel"> Mensaje</label> 
-       <textarea name="textarea" rows="5" cols="50" class="menCodyDec" id="menCodyDec"></textarea><br>
-       <label for="txtex2" class="lblabel">Llave</label> 
+       <!-- <label for="txtex2" class="lblabel"> Mensaje</label> -->
+       <label> Mensaje</label>
+       <textarea name="textarea" rows="5" cols="40" class="menCodyDec" id="menCodyDec"></textarea><br>
+       <label>Llave</label> 
        <input type="number"  id="number" min="1"><br><br>
        <button type="button" id="btnCodificar" class="btnCodificar"> Cifrar</button> 
        <button type="button" id="btnDecodificar" class="btnDecodificar">Descifrar</button>
@@ -38,17 +38,16 @@
       
       <!-- <div> -->
         <section class="secResultado hide" id="secResultado" >
-        <label for="txtex4">Resultado </label>
-        <p id="idResultado"></p> 
-        <p>Recuerda que tu clave es:<strong id="recLlave" ></strong></p>
-        <button typo="button" id="btnVolver" class="btnVolver">Volver</button>
+        <label>Resultado </label><br>
+        <!-- <p id="idResultado"></p> --> 
+        <textarea name="textarea" rows="5" cols="40" class="idResultado" id="idResultado"></textarea><br>
+        <p id="tex">Recuerda que tu clave es:<strong id="recLlave" ></strong></p>
+        <button typo="button" id="btnVolver" class="btnVolver">Volver</button><br><br>
         <button type="button" id="btnFinalizar" class="btnFinalizar">Finalizar</button>
 
       </section> 
 
-      <section id="secBloqueo" class="secBloqueo hide">
-      <h1> Ya utilizaste todos tus intentos, en este momento no podrás ingresar</h1>
-      </section>
+     
 
 <!--       </div> -->
     
