@@ -23,25 +23,24 @@ margin: auto;
 .secCodyDec{
 	
 	padding: 30px 30px;
-	/*display: none;*/
-	width: 45%;
+	width: 50%;
 	height: 100%;
 	margin:100px 400px;
-	background-color: #E1F5FE;
+	background-color:#E8F8F5;
 }
 
 .secResultado{
- padding: 30px 30px;
-	width: 45%;
+    padding: 30px 30px;
+	width: 50%;
 	height: 100%;
 	margin:100px 400px;
-	background-color: #E1F5FE;
-
+	background-color:#E8F8F5;
 }
+
 .menCodyDec{
 	border: 1px solid black;
 	vertical-align:top;
-	width:85%;
+	width:77%;
 }
 
 #number{
@@ -60,7 +59,6 @@ margin: auto;
 	height: 30px;
 	border-radius:3px; 
 	cursor: pointer;
-	transition: 0.4s;
 }
 #password{
 	margin: 20px auto;
