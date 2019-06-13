@@ -4,10 +4,12 @@ window.cipher = {
     let Nuevaletra = '';
     for (let i = 0; i < string.length; i++) {
        
-      if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+      if(string.charCodeAt(i) >= 48 && string.charCodeAt(i) <= 57) {
+        NumAscci = (string.charCodeAt(i) - 48 + parseInt(offset)) % 10 + 48;
+      }
+      else if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
         NumAscci = (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
       }
-
       else if(string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
         NumAscci = (string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
       }
@@ -22,8 +24,10 @@ window.cipher = {
     let NumAscci1 = 0;
     let Nuevaletra1 = '';
     for (let i = 0; i < string.length; i++) {
-      
-      if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
+      if(string.charCodeAt(i) >= 48 && string.charCodeAt(i) <= 57){
+        NumAscci1 = 57 - ((57 - string.charCodeAt(i) + parseInt(offset)) % 10);
+      }
+      else if(string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
         NumAscci1 = 90 - ((90 - string.charCodeAt(i) + parseInt(offset)) % 26);
       }
       //minuscula
