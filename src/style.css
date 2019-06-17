@@ -1,41 +1,72 @@
-/* AcÃ¡ van tus reglas de estilo */
+/* AcÃƒÂ¡ van tus reglas de estilo */
+*{margin: 0;padding: 0;}
+
 body{
     background: url(imagen2.jpg) no-repeat center top;
-   /* background-size: cover;*/
-    /*text-align: center;*/
+    background-size: cover;
+}
+header{
+width: 100%;
+background: black;
+color: #5cb568;
+line-height: 50px;
 }
 .secLogin{
  width: 320px;
  height: 420px;
  background-color: black;
- color: #F39C12;
- margin:  80px 500px;
+ /*color:#5cb568;*/
+ margin: 100px 550px;
  border-radius: 20px;
  padding: 20px 20px;
- font-size:22px;
+ /*font-size:22px;*/
  text-align: center;
+}
+.secLogin .bienvenida{
+	font-size:40px;
+	color:#5cb568;
+	margin:20px;
+
 }
 .secLogin .imagen1{
 border-radius: 50%;
 display: block;
 margin: auto;
 }
-.secCodyDec{
-	
-	padding: 30px 30px;
-	width: 50%;
-	height: 100%;
-	margin:100px 400px;
-	background-color:#E8F8F5;
+#password{
+	margin:12px;
+    border-radius:3px;
+    width: 200px;
+    height: 25px;
+}
+.mnsError{
+	font-size:15px;
+	color:red;
+	height: 100px:;
 }
 
-.secResultado{
-    padding: 30px 30px;
-	width: 50%;
-	height: 100%;
-	margin:100px 400px;
-	background-color:#E8F8F5;
+#btnIngresar{
+	/*margin: 10px auto;*/
+	width: 200px;
+	background-color:#5cb568;
+	color: white;
+	height: 30px;
+	border-radius:3px; 
+	cursor: pointer;
 }
+.secCodyDecResult{
+padding: 30px 30px;
+width: 50%;
+height: 100%;
+margin:190px 350px;
+background-color: #0e0e0d7d;
+}
+.titulo{
+	margin-left:130px;
+	color:#f2f5f7;
+	padding: 20px;
+}
+
 .menCodyDec{
 	border: 1px solid black;
 	vertical-align:top;
@@ -43,57 +74,56 @@ margin: auto;
 }
 
 #number{
-    width:30px;
-    margin:10px 20px  
-}
-
-.hide{
-	display:none;
-}
-#btnIngresar{
-	/*margin: 10px auto;*/
-	width: 200px;
-	background-color:#F39C12;
-	color: white;
-	height: 30px;
-	border-radius:3px; 
-	cursor: pointer;
-}
-#password{
-	margin: 20px auto;
-    border-radius:3px;
-    width: 200px;
-    height: 25px;
+    width:50px;
+    margin:20px 30px;  
 }
 .btnCodificar{
 	margin-left:440px;
 	margin-right:30px;
 	cursor: pointer;
+	background:#85e892;
+	border-radius:10px;
+	width: 85px;
+	height:25px;
+	color:#1c445d;
+	font-weight:700;
 }
 .btnDecodificar{
 	cursor: pointer;
+	background:#85e892;
+	border-radius:10px;
+	width: 85px;
+	height:25px;
+	color:#1c445d;
+	font-weight:700;
 }
-#secCodyDec h1{
-	margin-left:120px
+
+.hide{
+	display:none;
 }
-.idResultado{
+.textAreaResult{
 	border: 1px solid black;
 	width:77%;
-	margin-left:90px;
+	margin-left:100px;
 }
-.btnVolver{
-	margin-left:300px;
+#lblRemember{
+	font-size:20px;
+}
+.btnVolverFinalizar{
+	margin-left:330px;
 	width:80px;
 	cursor: pointer;
-}
-.btnFinalizar{
-	margin-left:300px;
-	width:80px;
-	cursor: pointer;
+	background:#85e892;
+	border-radius:10px;
+	width: 85px;
+	height:25px;
+	color:#1c445d;
+	font-weight:700;
 }
 label{
 font-size: 20px;
+font-family:sans-serif;
+font-weight:600;
+color:#8bb3cc;
 }
-#tex{
-	font-size:20px;
-}
+
