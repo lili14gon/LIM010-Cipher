@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" />
-    <title>cifrado cesar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      
-    </header>
 
-    <main>
-      <!-- <div> -->
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+  <title>cifrado cesar</title>
+  <meta name="viewport"
+    content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
 
-        <section class="secLogin" id="secLogin">
-      <h1>Bienvenido</h1>
-      <img class="imagen1" src="imagen1.jpg" >
-     <!--  <label for="lbltex1" id ="label"> Ingresa tu password</label> -->
-      <input type="password"  id="password" placeholder="ingresa tu password">
-     <!--  <p class="mnsError" id="mnsError">password incorrecto </p> -->
+<body>
+  <header>
+    <div class="headboard">CIFRADO CESAR</div>
+  </header>
+
+  <main>
+
+    <section class="secLogin" id="secLogin">
+      <h1 class="bienvenida">Bienvenido</h1>
+      <img class="imagen1" src="imagen1.jpg">
+      <!--  <label for="lbltex1" id ="label"> Ingresa tu password</label> -->
+      <input type="password" id="password" placeholder="ingresa tu password"><br>
+      <span class="mnsError" id="mnsError"></span>
       <button type="button" id="btnIngresar"> inicia sesion</button>
-      </section>
-      <!-- </div> -->
-     <!--  <div> -->
-        <section class="secCodyDec hide" id="secCodyDec">
-       <h1>CIFRA O DESCIFRA TUS MENSAJES</h1>
-       <!-- <label for="txtex2" class="lblabel"> Mensaje</label> -->
-       <label> Mensaje</label>
-       <textarea name="textarea" rows="5" cols="40" class="menCodyDec" id="menCodyDec"></textarea><br>
-       <label>Llave</label> 
-       <input type="number"  id="number" min="1"><br><br>
-       <button type="button" id="btnCodificar" class="btnCodificar"> Cifrar</button> 
-       <button type="button" id="btnDecodificar" class="btnDecodificar">Descifrar</button>
-       <!-- <textarea id="idResultado"></textarea> -->
-      </section>
-     <!--  </div> -->
-      
-      <!-- <div> -->
-        <section class="secResultado hide" id="secResultado" >
-        <label>Resultado </label><br>
-        <!-- <p id="idResultado"></p> --> 
-        <textarea name="textarea" rows="5" cols="40" class="idResultado" id="idResultado"></textarea><br>
-        <p id="tex">Recuerda que tu clave es: <strong id="recLlave" ></strong></p>
-        <button type="button" id="btnVolver" class="btnVolver">Volver</button><br><br>
-        <button type="button" id="btnFinalizar" class="btnFinalizar">Finalizar</button>
+    </section>
 
-      </section> 
+    <section class="secCodyDecResult hide" id="secCodyDec">
+      <h1 class="titulo">CIFRA O DESCIFRA TUS MENSAJES</h1>
+      <!-- <label for="txtex2" class="lblabel"> Mensaje</label> -->
+      <label> Mensaje</label>
+      <textarea name="textarea" rows="5" cols="40" class="menCodyDec" id="menCodyDec"></textarea><br>
+      <label>Llave</label>
+      <input type="number" id="number" min="1"><br><br>
+      <button type="button" id="btnCodificar" class="btnCodificar"> Cifrar</button>
+      <button type="button" id="btnDecodificar" class="btnDecodificar">Descifrar</button>
+      <!-- <textarea id="textAreaResult"></textarea> -->
+    </section>
 
-     
+    <section class="secCodyDecResult hide" id="secResult">
+      <label>Resultado </label><br>
+      <!-- <p id="textAreaResult"></p> -->
+      <textarea name="textarea" rows="5" cols="40" class="textAreaResult" id="textAreaResult"></textarea><br><br>
+      <label id="lblRemember">Recuerda que la llave es: <strong id=" strongRememberKeys"></strong></label><br>
+      <button type="button" id="btnVolver" class="btnVolverFinalizar">Volver</button><br><br>
+      <button type="button" id="btnFinalizar" class="btnVolverFinalizar">Finalizar</button>
+    </section>
+  </main>
+  <footer>
+    <p>creado por Liliana Gonzales liligh14@gamil.com</p>
+  </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
 
-<!--       </div> -->
-    
-
-    </main>
-    <footer>
-      <p>creado por Liliana gonzales liligh14@gamil.com</p>
-    </footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
 </html>
