@@ -20,24 +20,34 @@
       <h1 class="bienvenida">Bienvenido</h1>
       <img class="imagen1" src="imagen1.jpg">
       <!--  <label for="lbltex1" id ="label"> Ingresa tu password</label> -->
-      <div class="div-pass-btn">
-        <input type="password" id="password" placeholder="ingresa tu password"><br>
-        <span class="mnsError" id="mnsError"></span>
-        <button type="button" id="btnIngresar"> inicia sesion</button>
-      </div>
+      <input type="password" id="password" placeholder="ingresa tu password"><br>
+      <span class="mnsError" id="mnsError"></span>
+      <button type="button" id="btnIngresar"> inicia sesion</button>
     </div>
 
-    <section class="secCodyDecResult hide" id="secCodyDec">
+    <div class="secCodyDecResult hide" id="secCodyDec">
       <h1 class="titulo">CIFRA O DESCIFRA TUS MENSAJES</h1>
       <!-- <label for="txtex2" class="lblabel"> Mensaje</label> -->
+      <!-- <div>
       <label> Mensaje</label>
       <textarea name="textarea" rows="5" cols="40" class="menCodyDec" id="menCodyDec"></textarea><br>
       <label>Llave</label>
       <input type="number" id="number" min="1"><br><br>
+    </div> -->
+    <div class="men">
+      <label> Mensaje</label>
+      <textarea name="textarea" rows="5" cols="40" class="menCodyDec" id="menCodyDec"></textarea>
+    </div>
+    <div>
+      <label>Llave</label>
+      <input type="number" id="number" min="1">
+    </div>
+    <div>
       <button type="button" id="btnCodificar" class="btnCodificar"> Cifrar</button>
       <button type="button" id="btnDecodificar" class="btnDecodificar">Descifrar</button>
+    </div>
       <!-- <textarea id="textAreaResult"></textarea> -->
-    </section>
+    </div>
 
     <section class="secCodyDecResult hide" id="secResult">
       <label>Resultado </label><br>
@@ -49,7 +59,7 @@
     </section>
   </main>
   <footer>
-    creado por Liliana Gonzales liligh14@gmail.com
+    <p>creado por Liliana Gonzales liligh14@gmail.com</p>
   </footer>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
